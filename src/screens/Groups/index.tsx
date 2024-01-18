@@ -1,11 +1,11 @@
-import { Text, View } from 'react-native';
-import { s } from './styles';
+import { Header } from '@components/Header';
+import {Container} from './styles';
 
 export const Groups = () => {
   return (
-    <View style={s.container}>
-      <Text>funcionou!</Text>
-    </View>
+    <Container> 
+      <Header />
+    </Container>
   );
 }
 

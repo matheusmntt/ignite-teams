@@ -1,10 +1,7 @@
-import { StyleSheet } from "react-native";
-
-export const s = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import styled from 'styled-components/native'
+ 
+export const Container = styled.View`
+  flex: 1;
+  background-color: ${({ theme }) => theme.COLORS.GRAY_600}; 
+  padding: 24px;
+` 
