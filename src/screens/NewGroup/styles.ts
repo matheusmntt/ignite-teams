@@ -1,14 +1,15 @@
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { KeyboardAvoidingView } from 'react-native'
 import { UsersThree } from 'phosphor-react-native'
 import styled from "styled-components/native"
 
-export const Container = styled(KeyboardAvoidingView)`
+export const Container = styled(SafeAreaView)`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.GRAY_600};
   padding: 24px;
 `
 
-export const Content = styled.View`
+export const Content = styled(KeyboardAvoidingView)`
   flex: 1;
   justify-content: center; 
 `
