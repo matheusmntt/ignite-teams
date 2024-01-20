@@ -8,9 +8,9 @@ type ButtonIconProps = TouchableOpacityProps & {
   type?: ButtonIconStyleProps
 }
 
-export const ButtonIcon = ({ icon, type = 'PRIMARY' }: ButtonIconProps) => {
+export const ButtonIcon = ({ icon, type = 'PRIMARY', ...rest }: ButtonIconProps) => {
   return (
-    <Container>
+    <Container {...rest}>
       <Icon name={icon} type={type} />
     </Container>
   )
